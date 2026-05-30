@@ -1,0 +1,50 @@
+# Dados (nunca versionar dados sensíveis)
+data/raw/
+data/interim/
+data/external/
+
+# data/processed/ — MANTER no git (app precisa dos parquets)
+# models/ — MANTER no git (app precisa dos modelos)
+
+# Modelos grandes — ignorar apenas se > 100MB
+# *.pkl     ← comentado — app precisa dos encoders
+# *.joblib  ← comentado — app precisa do pipeline
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Ambiente
+.env
+.env.*
+!.env.example
+*.egg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Conda
+.conda/
+
+# Virtual documents (Jupyter/LSP)
+.virtual_documents/

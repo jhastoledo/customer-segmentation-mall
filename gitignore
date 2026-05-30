@@ -1,0 +1,27 @@
+# ── Dados ────────────────────────────────────────────────────────
+# raw NÃO versionado (baixar do Kaggle)
+data/raw/
+
+# processed: ignora tudo, EXCETO features.parquet (necessário p/ o app)
+data/processed/*
+!data/processed/features.parquet
+
+# ── Modelos: VERSIONADOS (necessários para o deploy) ─────────────
+# models/ fica versionado por padrão. Se algum artefato for pesado
+# demais para o git, considere Git LFS em vez de ignorá-lo.
+
+# ── Python / Jupyter ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.virtual_documents/
+
+# ── Ambiente ─────────────────────────────────────────────────────
+.env
+.venv/
+venv/
+
+# ── SO ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

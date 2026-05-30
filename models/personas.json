@@ -1,0 +1,26 @@
+{
+  "0": {
+    "nome": "Maduros Equilibrados",
+    "descricao": "Meia-idade, renda e gasto medianos — base estável e fiel"
+  },
+  "1": {
+    "nome": "Jovens Equilibrados",
+    "descricao": "Jovens, renda e gasto medianos — potencial de crescimento"
+  },
+  "2": {
+    "nome": "Abastados Conservadores",
+    "descricao": "Renda alta, gasto baixo — alto poder, baixa conversão"
+  },
+  "3": {
+    "nome": "Premium",
+    "descricao": "Renda alta, gasto alto — clientes-ouro, foco de retenção"
+  },
+  "4": {
+    "nome": "Jovens Impulsivos",
+    "descricao": "Jovens, renda baixa, gasto alto — sensíveis a tendência/promoção"
+  },
+  "5": {
+    "nome": "Econômicos",
+    "descricao": "Renda baixa, gasto baixo — consumo contido, atrair por valor"
+  }
+}

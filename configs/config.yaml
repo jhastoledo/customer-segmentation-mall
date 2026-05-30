@@ -1,0 +1,53 @@
+projeto:
+  nome: "customer_segmentation_mall"
+  versao: "0.1.0"
+  autor: "Jhonnes Toledo"
+  descricao: "Projeto - Segmentação de clientes - Shopping"
+
+caminhos:
+  dados_raw: "data/raw/"
+  dados_processed: "data/processed/"
+  modelos: "models/"
+  reports: "reports/"
+  figures: "reports/figures/"
+  dados_brutos: "Mall_Customers.csv"   # altere para o nome do seu arquivo
+ 
+
+dados:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  stratify: true
+  target_col: "target"                  # altere para o nome da sua coluna alvo
+  id_col: null                          # altere se houver coluna de ID
+
+modelo:
+  tipo: "random_forest"                 # random_forest | xgboost | logistic_regression
+  params:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_split: 5
+    min_samples_leaf: 2
+    class_weight: "balanced"
+    random_state: 42
+  cv_folds: 5
+  scoring: "roc_auc"
+
+avaliacao:
+  metricas: ["accuracy", "precision", "recall", "f1", "roc_auc"]
+  threshold: 0.5
+  plot_confusion_matrix: true
+  plot_roc_curve: true
+  gerar_shap: true
+  salvar_relatorio: true
+
+logging:
+  nivel: "INFO"
+  formato: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  arquivo: "reports/projeto.log"
+  console: true
+
+deploy:
+  plataforma: "streamlit_cloud"         # streamlit_cloud | render | huggingface | railway
+  porta: 8501
+  debug: false
