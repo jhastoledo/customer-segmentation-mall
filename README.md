@@ -15,6 +15,8 @@ Este projeto segmenta **200 clientes** de um shopping a partir de três variáve
 
 A abordagem prioriza decisões justificadas por evidência: cada escolha de método (excluir gênero, número de clusters, papel do PCA) é ancorada em testes estatísticos e métricas de validação documentadas ao longo de seis notebooks.
 
+🔗 **[Acessar App no Streamlit Cloud](https://customer-segmentation-mall-kpgewlzwwzohpjny3dpuer.streamlit.app/)**
+
 ---
 
 ## 🎯 Resultados principais
