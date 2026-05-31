@@ -48,3 +48,4 @@ logs/
 
 # Virtual documents (Jupyter/LSP)
 .virtual_documents/
+environment.yml
