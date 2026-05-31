@@ -15,8 +15,6 @@ Este projeto segmenta **200 clientes** de um shopping a partir de três variáve
 
 A abordagem prioriza decisões justificadas por evidência: cada escolha de método (excluir gênero, número de clusters, papel do PCA) é ancorada em testes estatísticos e métricas de validação documentadas ao longo de seis notebooks.
 
-🔗 **[Acessar App no Streamlit Cloud](https://customer-segmentation-mall-kpgewlzwwzohpjny3dpuer.streamlit.app/)**
-
 ---
 
 ## 🎯 Resultados principais
@@ -78,7 +76,7 @@ Geração dos artefatos de deploy, relatório HTML autossuficiente e checagem de
 
 ```
 customer_segmentation_mall/
-├── app/                      # aplicação Streamlit (em refatoração para o pipeline novo)
+├── app/                      
 │   ├── main.py
 │   ├── style.py
 │   └── pages/
@@ -155,7 +153,7 @@ print(personas[str(cluster)]["nome"])   # → "Premium"
 
 ## 🌐 App Streamlit e deploy
 
-> ⚠️ **Em refatoração.** A aplicação em `app/` ainda reflete a versão manual anterior e está sendo adaptada para consumir o `pipeline_final.joblib` e o `features.parquet` gerados pelo novo fluxo. As instruções abaixo valem para a versão refatorada.
+🔗 **[Acessar App no Streamlit Cloud](https://customer-segmentation-mall-kpgewlzwwzohpjny3dpuer.streamlit.app/)**
 
 ### Rodar localmente
 
